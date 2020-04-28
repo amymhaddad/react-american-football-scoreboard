@@ -9,7 +9,6 @@ export default function ScoreHome({homeScore, setHomeScore}) {
                 <div className="home__score">{homeScore}</div>
             </div>
 
-  
             <section className="buttons">
                 <div className="homeButtons">
                     <button 
@@ -25,3 +24,4 @@ export default function ScoreHome({homeScore, setHomeScore}) {
         </div>
     )
 }
+

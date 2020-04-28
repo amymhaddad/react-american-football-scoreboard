@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function ScoreAway({awayScore, setAwayScore}) {
+//extract scores (7 and 3) as constants
 
 return (
     <div className="container">
@@ -8,8 +9,6 @@ return (
             <h2 className="away__name">Tigers</h2>
             <div className="away__score">{awayScore}</div>
         </div>
-
-    
 
         <section className="buttons">
         <div className="awayButtons">
@@ -25,7 +24,5 @@ return (
         </div>
         </section>
         </div>
-
-
     )
 }
