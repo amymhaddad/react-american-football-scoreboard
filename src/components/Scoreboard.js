@@ -19,26 +19,18 @@ export default function ScoreBoard() {
             <div className="topRow">
             <ScoreHome className="home__score" homeScore = {homeScore}/>  
             
-              
-              {/* <div className="home">
-                <h2 className="home__name">Lions</h2>
     
-                <div className="home__score">{homeScore}</div>
-              </div>
-   */}
-  
             <div className="timer">00:03</div>
+            <ScoreAway className="away_score" awayScore={awayScore}/>
   
-  
-            <div className="away">
-              <h2 className="away__name">Tigers</h2>
-              <div className="away__score">{awayScore}</div>
-            </div>
   
           </div>
   
           <BottomRow />
         </section>
+
+
+
   
         <section className="buttons">
   
