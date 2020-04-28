@@ -13,14 +13,19 @@ export default function ScoreBoard() {
 
         <div className="container">
       
-        <section className="scoreboard">
-          <div className="topRow">
-            <div className="home">
-              <h2 className="home__name">Lions</h2>
-  
-              <div className="home__score">{homeScore}</div>
-            </div>
-  
+          <section className="scoreboard">
+            
+
+            <div className="topRow">
+            <ScoreHome className="home__score" homeScore = {homeScore}/>  
+            
+              
+              {/* <div className="home">
+                <h2 className="home__name">Lions</h2>
+    
+                <div className="home__score">{homeScore}</div>
+              </div>
+   */}
   
             <div className="timer">00:03</div>
   
