@@ -17,51 +17,17 @@ export default function ScoreBoard() {
             
 
             <div className="topRow">
-            <ScoreHome className="home__score" homeScore = {homeScore}/>  
+            <ScoreHome className="home__score" homeScore = {homeScore} setHomeScore={setHomeScore}/>  
             
     
             <div className="timer">00:03</div>
-            <ScoreAway className="away_score" awayScore={awayScore}/>
-  
-  
+            <ScoreAway className="away_score" awayScore={awayScore} setAwayScore={setAwayScore}/>
+
           </div>
   
           <BottomRow />
         </section>
 
-
-
-  
-        <section className="buttons">
-  
-          <div className="homeButtons">
-        
-            <button 
-              className="homeButtons__touchdown"
-              onClick= {() => setHomeScore(homeScore + 7) }
-              >Home Touchdown</button>
-  
-  
-            <button 
-              className="homeButtons__fieldGoal"
-              onClick={() =>setHomeScore(homeScore +3)}
-              >Home Field Goal</button>
-          </div>
-  
-  
-          <div className="awayButtons">
-            <button 
-              className="awayButtons__touchdown"
-              onClick={() =>setAwayScore(awayScore +7)}
-              >Away Touchdown</button>
-  
-            <button 
-              className="awayButtons__fieldGoal"
-              onClick={() =>setAwayScore(awayScore +3)} 
-            >Away Field Goal</button>
-  
-          </div>
-        </section>
       </div>
 
     )
