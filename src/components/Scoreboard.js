@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ScoreHome from "./ScoreHome";
 import ScoreAway from "./ScoreAway";
 import BottomRow from "./BottomRow";
+import TeamScore from "./TeamScore";
 
 
 //make a general component called TeamScore compoentnt that I will use 2x -- one for home and one for away -- and pass in the correct data
@@ -11,12 +12,17 @@ export default function ScoreBoard() {
     const [homeScore, setHomeScore] = useState(0);
     const [awayScore, setAwayScore] = useState(0);
 
+
+
     return (
 
         <div className="container">
           <section className="scoreboard">
             <div className="topRow">
-              <ScoreHome className="home__score" homeScore = {homeScore} setHomeScore={setHomeScore}/>  
+
+              <TeamScore className="home__score" teamName="Lions" score={homeScore} setScore={setHomeScore} />
+
+              {/* <ScoreHome className="home__score" homeScore = {homeScore} setHomeScore={setHomeScore}/>   */}
               
               <div className="timer">00:03</div>
               <ScoreAway className="away_score" awayScore={awayScore} setAwayScore={setAwayScore}/>
